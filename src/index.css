@@ -1,3 +1,12 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #FFFFFF;
+  --accent: #6E6E6E;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
