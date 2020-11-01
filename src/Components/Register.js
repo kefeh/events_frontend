@@ -1,22 +1,26 @@
 import React, { useState } from 'react'
 import '../Stylesheets/Assets.css'
-import '../Stylesheets/Login.css'
+import '../Stylesheets/Register.css'
 import '../Stylesheets/AuthForm.css'
 import { VisibilityRounded, VisibilityOffRounded } from '@material-ui/icons';
 
-function Login() {
+function Register() {
     const [showPassword, setShowPassword] = useState(false);
 
     return (
-        <div className="login">
+        <div className="register">
             <form action="" className="auth_form">
+                <div className="form-item">
+                    <label>Name</label>
+                    <input type="text" name="name"/>
+                </div>
                 <div className="form-item">
                     <label>Email</label>
                     <input type="text" name="email"/>
                 </div>
                 <div className="form-item">
                     <label>Password</label>
-                    <input type={showPassword?"text":"password"} name="password"/>
+                    <input type="password" name="password"/>
                     <div onClick={() => setShowPassword(!showPassword)}>
                         {showPassword? 
                         <VisibilityRounded/>
@@ -38,4 +42,4 @@ function Login() {
     )
 }
 
-export default Login
+export default Register
