@@ -1,0 +1,11 @@
+.btn {
+    border: 2px solid var(--accent);
+    display: inline-block;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.btn__primary {
+    color: var(--primary);
+    background-color: var(--accent);
+}
